@@ -1,4 +1,3 @@
-
 class NotesPage {
 
     constructor() {
@@ -15,9 +14,16 @@ class NotesPage {
         element(by.buttonText('Save')).click()
     }
 
+    createNote(title = '', body = '') {
+
+        browser.wait(EC.elementToBeClickable.this(`${createNote}`, 5000))
+    }
+
     //Получим коллекцию всех заметок которые есть на этой странице
     getNotes() {
         return $$('.grid-container .grid-item')
+
+
     }
 }
 

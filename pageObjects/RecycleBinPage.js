@@ -2,7 +2,6 @@ class RecycleBinPage {
     constructor() {
         this.pushToRecycleBin = $('[title="Delete"] > .fa-trash')
         this.pushToDeleteForever = $('.btn-raised[title="Delete forever"]')
-            //.btn-raised[title="Delete forever"] = $(`a[title='Delete forever']`)
         this.pushToRestore = $('.btn-raised[title="Restore"]')
 
     }
